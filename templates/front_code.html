@@ -1,0 +1,20 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Marks Predictor</title>
+</head>
+<body>
+    <h2>🧠 AI Model to Predict Marks & Grade</h2>
+    <form method="POST">
+        <label>Enter Hours Studied:</label>
+        <input type="number" step="0.1" name="hours" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if result %}
+        <h3>🔍 Result: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
